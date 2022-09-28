@@ -106,3 +106,5 @@ set_env.sh
 udagram-api.postman_collection.json
 udagram-api/package-lock.json
 udagram-frontend/package-lock.json
+udagram-api-feed/package-lock.json
+udagram-api-user/package-lock.json
