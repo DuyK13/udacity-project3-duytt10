@@ -28,6 +28,12 @@ export function requireAuth(
         .status(500)
         .send({ auth: false, message: "Failed to authenticate." });
     }
+    if (!decoded) {
+      return res
+        .status(500)
+        .send({ auth: false, message: "Failed to authenticate." });
+    }
+    req.user = decoded;
     return next();
   });
 }
